@@ -13,6 +13,6 @@
 4. pip install -r requirements.txt
 
 ## Output
-* Log  
+* Application Log  
 * Results: Insert data into MONGO
 * Results: Text File
