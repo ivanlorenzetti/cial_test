@@ -1,0 +1,10 @@
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=QKy%2BxLQZIzqiase3YjAHK%2BMRKbLwW%2Bq%2Bjt1EV581SxqFpEGo%2F%2FcXwAoGhCu4jEW9uZeTIjUEdto0Cu%2F0mcToqErqxpML5qpaPUd7LDHc"}],"group":"cf-nel","max_age":604800}
+Cache-Control: max-age=3600
+Cf-Ray: 5ff20a4becaff6ec-GRU
+Cf-Request-Id: 06eb24c3730000f6ec4d3b8000000001
+Server: cloudflare
+Nel: {"report_to":"cf-nel","max_age":604800}
+Location: https://powerlinx.com/contact/
+Expires: Wed, 09 Dec 2020 23:07:38 GMT
+Vary: Accept-Encoding
+Date: Wed, 09 Dec 2020 22:07:38 GMT

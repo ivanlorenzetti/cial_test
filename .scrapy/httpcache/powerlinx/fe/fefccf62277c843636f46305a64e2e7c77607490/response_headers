@@ -1,0 +1,23 @@
+X-Cache-Group: normal
+X-Download-Options: noopen
+Cache-Control: max-age=600, must-revalidate
+Nel: {"report_to":"cf-nel","max_age":604800}
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Cf-Cache-Status: HIT
+X-Cache: HIT: 1
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Cf-Apo-Via: cache
+Content-Type: text/html; charset=UTF-8
+Date: Wed, 09 Dec 2020 22:07:53 GMT
+Cf-Request-Id: 06eb24fcba0000f6cf71bc8000000001
+Cf-Edge-Cache: cache,platform=wordpress
+X-Powered-By: WP Engine
+Link: <https://www.powerlinx.com/wp-json/>; rel="https://api.w.org/", <https://www.powerlinx.com/wp-json/wp/v2/pages/41>; rel="alternate"; type="application/json", <https://www.powerlinx.com/>; rel=shortlink
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=O5yS%2BRJT4ymsYiARvtvapBUJVycuX5Wtr5vJBi6pHOYqsPB5isnmjq3OS1vEmRw49iqVE%2F%2FtpEEzBleZgarEDc4Ha8QKHaYdE7aK39hl8Uc4sQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+Cf-Ray: 5ff20aa78cd0f6cf-GRU
+X-Cacheable: SHORT
+Server: cloudflare
+Vary: Accept-Encoding, Accept-Encoding,Cookie
+Age: 210616
+X-Xss-Protection: 1; mode=block
