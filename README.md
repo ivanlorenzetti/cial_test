@@ -12,7 +12,7 @@
 3. virtualenv --python=\users\ivanl\anaconda3\envs\py35\python.exe prod (Install Python 3.5 with virtualenv ( requirements ) )
 4. pip install -r requirements.txt
 
-##Output
+## Output
 * Log  
 * Results: Insert data into MONGO
-* Results are write at txt file
+* Results: Text File
