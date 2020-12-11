@@ -1,9 +1,9 @@
 # Cial Test - 11/12/2020
 
-**Read text file with sites and extract:**
-*url
-*phone
-*logo
+**Read text file with content a url sites and extract:**
+* url
+* phone
+* logo
 
 
 ## Installation
