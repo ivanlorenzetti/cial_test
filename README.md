@@ -1,4 +1,5 @@
-# cial_test
+# Cial Test - 11/12/2020
 
-* Item 1
-* Item 2
+* 1 - git clone git@github.com:ivanlorenzetti/cial_test.git
+* 2 - cd cial_test
+* 3 - pip install -r requirements.txt
