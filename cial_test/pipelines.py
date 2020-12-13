@@ -12,10 +12,16 @@ import json
 from datetime import datetime, timezone, timedelta
 import pymongo
 
+from io import StringIO
+import sys
+
 
 class CialTestPipeline(object):
 
     def __init__(self):
+
+
+
         connection = pymongo.MongoClient('localhost', 27017)
 
         db = connection['cial_test']
