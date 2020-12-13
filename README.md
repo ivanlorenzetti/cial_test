@@ -12,7 +12,8 @@
 3. virtualenv --python=\users\ivanl\anaconda3\envs\py35\python.exe prod (with Python 3.5 with virtualenv ( requirements ) 
 4. cd prod 
 5. cd scripts\activate.bat
-4. pip install -r requirements.txt
+6. pip install -r requirements.txt
+7. python3 bot.py
 
 ## Output
 * Application Log  
