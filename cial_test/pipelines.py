@@ -44,7 +44,7 @@ class CialTestPipeline(object):
 
         #resultados importados para MONGO
         print('insert mongo')
-        self.collection.insert(dict(item))
+        #self.collection.insert(dict(item))
 
         return item
 
