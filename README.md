@@ -13,7 +13,7 @@
 4. cd prod 
 5. cd scripts\activate.bat
 6. pip install -r requirements.txt
-7. python3 bot.py
+7. type website.txt | py bot.py
 
 ## Output
 * Application Log  
