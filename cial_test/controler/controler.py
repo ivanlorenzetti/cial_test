@@ -53,10 +53,10 @@ class Controler:
             for starting_url in starting_urls:
                 try:
                     yield runner.crawl(CialTestSpider, start_urls=[starting_url])
+
                 except Exception as e:
                     logging.warning('Error %s' % str(e))
             reactor.stop()
 
         crawl(self.starting_urls)
-
         reactor.run()

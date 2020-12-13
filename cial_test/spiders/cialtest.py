@@ -7,6 +7,11 @@ from cial_test.items import CialTestItem
 class CialTestSpider(scrapy.Spider):
     name = 'cialtest'
 
+    def __init__(self, start_urls=[], **kwargs):
+        self.start_urls = start_urls
+        super().__init__(**kwargs)
+
+
     def clean_url(self, url):
         url = url.replace("['", "")
         url = url.replace("']", "")
