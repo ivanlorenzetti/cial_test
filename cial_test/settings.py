@@ -70,10 +70,10 @@ DOWNLOAD_DELAY = 3
 ITEM_PIPELINES = {
    'cial_test.pipelines.CialTestPipeline': 300,
 }
-MONGODB_SERVER = "localhost"
-MONGODB_PORT = 27017
-MONGODB_DB = "cial_test"
-MONGODB_COLLECTION = "cial"
+#MONGODB_SERVER = "localhost"
+#MONGODB_PORT = 27017
+#MONGODB_DB = "cial_test"
+#MONGODB_COLLECTION = "cial"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

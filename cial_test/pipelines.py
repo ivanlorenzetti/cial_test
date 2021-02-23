@@ -10,7 +10,6 @@ from itemadapter import ItemAdapter
 import logging
 import json
 from datetime import datetime, timezone, timedelta
-import pymongo
 
 from io import StringIO
 import sys
@@ -18,16 +17,7 @@ import sys
 
 class CialTestPipeline(object):
 
-    def __init__(self):
-
-
-
-        connection = pymongo.MongoClient('localhost', 27017)
-
-        db = connection['cial_test']
-        self.collection = db['cial']
-        print(self.collection)
-
+    
     def open_spider(self, spider):
         start_time = datetime.now()
         file_log = 'results'+str(start_time).replace('.', '').replace(':', '').replace(' ', '')
@@ -43,7 +33,7 @@ class CialTestPipeline(object):
         self.file.write(line)
 
         #resultados importados para MONGO
-        print('insert mongo')
+        #print('insert mongo')
         #self.collection.insert(dict(item))
 
         return item
