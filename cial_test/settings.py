@@ -21,6 +21,8 @@ USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
+import logging
+LOG_LEVEL = logging.INFO
 
 #REDIRECT_ENABLED = False
 

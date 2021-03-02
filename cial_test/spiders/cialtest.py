@@ -7,11 +7,27 @@ from cial_test.items import CialTestItem
 
 class CialTestSpider(scrapy.Spider):
 	name = 'cialtest'
-
+	
+	custom_settings = {
+        'CONCURRENT_REQUESTS': 25,
+        'CONCURRENT_REQUESTS_PER_DOMAIN': 100,
+        'DOWNLOAD_DELAY': 0
+    }
+	
+	'''
 	def __init__(self, start_urls=[], **kwargs):
 		self.start_urls = start_urls
 		super().__init__(**kwargs)
+	'''
+	
+	def __init__(self, url_lst=None):
+		self.url_lst = url_lst
 
+	def start_requests(self):                
+		for url in self.url_lst:
+			yield scrapy.Request(url=url, callback=self.parse)
+
+	
 	
 	def clean_url(self, url):
 		url = url.replace("['", "")

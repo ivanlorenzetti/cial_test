@@ -29,6 +29,8 @@ class CialTestPipeline(object):
 
     def process_item(self, item, spider):
         #resultados em arquivos txt
+		
+		
         line = json.dumps(dict(item)) + '\n'
         self.file.write(line)
 
