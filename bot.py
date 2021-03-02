@@ -1,24 +1,24 @@
-from cial_test.controler.controler import Controler
 import sys
+import scrapy
+import logging
 
+from scrapy.crawler import CrawlerProcess
+from scrapy.settings import Settings
 
-class Bot():
+import cial_test.settings as custom_settings
+from cial_test.spiders.cialtest import CialTestSpider
 
-    def __init__(self):
-        self.stdin_txt_file = None
-        self.website = []
+if __name__ == "__main__":
 
-        if sys.stdin.isatty():
-            sys.exit('How to use: cat website.txt | python3 bot.py ')
+	url_list = []
+	for line in sys.stdin:
+		line_stripped = line.strip()
+		url_list.append(line_stripped)
 
-        self.stdin_txt_file = sys.stdin
+	
+	crawler_settings = Settings()
+	crawler_settings.setmodule(custom_settings)
 
-        for x in self.stdin_txt_file:
-            self.website.append(x.strip())
-
-    def run(self):
-        bot = Controler(starting_urls=self.website)
-        bot.scrape()
-
-Bot().run()
-
+	process = CrawlerProcess(settings=crawler_settings)
+	process.crawl(CialTestSpider, url_lst=url_list)
+	process.start()
